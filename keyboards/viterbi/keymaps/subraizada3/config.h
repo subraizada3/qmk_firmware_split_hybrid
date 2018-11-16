@@ -1,5 +1,5 @@
 /*
-Copyright 2018 Danny Nguyen <danny@keeb.io>
+Copyright 2017 Danny Nguyen <danny@hexwire.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,16 +28,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Select hand configuration */
 
 #define MASTER_LEFT
-#ifndef MASTER_LEFT
-    #define MASTER_RIGHT
-#endif
+// #define MASTER_RIGHT
 // #define EE_HANDS
-
-#define TAPPING_TERM 150
 
 #undef RGBLED_NUM
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 2
+#define RGBLED_NUM 12
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8

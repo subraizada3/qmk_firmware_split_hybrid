@@ -25,17 +25,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x1157
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    Keebio
-#define PRODUCT         The Viterbi Keyboard
-#define DESCRIPTION     Split 5x14 ortholinear keyboard
+#define PRODUCT         The Nyquist + Viterbi Hybrid Keyboard
+#define DESCRIPTION     Split 5x13 ortholinear keyboard
 
 /* key matrix size */
 // Rows are doubled-up
 #define MATRIX_ROWS 10
-#define MATRIX_COLS 7
+#define MATRIX_COLS 8
 
 // wiring of each half
 #define MATRIX_ROW_PINS { D4, D7, E6, B4, B5 }
-#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
+//#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
+#define MATRIX_COL_PINS { D2, F5, F6, F7, B1, B3, B2, B6 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
