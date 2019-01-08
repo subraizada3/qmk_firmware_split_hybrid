@@ -1,3 +1,26 @@
+Setup
+-----
+Install packages (some may be in AUR instead of repos):
+```
+pacman -S --needed base-devel avrdude avr-gcc avr-binutils avr-libc dfu-programmer dfu-util arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib git diffutils
+```
+
+Configure
+---------
+```
+vim keyboards/v60_tpe_r/keymaps/vimouse/keymap.c   # v60
+vim keyboards/viterbi/subraizada3/keymap.c         # asymmetric split
+```
+
+Build/Flash
+-----------
+```
+sudo make v60_type_r:vimouse:dfu        # v60
+sudo make viterbi:subraizada3:avrdude   # asymmetric split
+```
+
+--- original QMK readme below ---
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
