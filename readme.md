@@ -5,6 +5,8 @@ Install packages (some may be in AUR instead of repos):
 pacman -S --needed base-devel avrdude avr-gcc avr-binutils avr-libc dfu-programmer dfu-util arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib git diffutils
 ```
 
+May need to use `avr-gcc` 8.1 instead of a newer version if flashing fails. Pacman tar.xz file included in this base directory.
+
 Configure
 ---------
 ```
